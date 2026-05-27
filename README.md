@@ -1,4 +1,4 @@
-# 🏥 Electronic Health Record Blockchain Based Platform
+#  Electronic Health Record Blockchain Based Platform
 
 A blockchain-powered Electronic Health Record (EHR) platform built using Hyperledger Fabric, Node.js, Docker, and IPFS.
 
@@ -12,7 +12,7 @@ This project demonstrates how enterprise blockchain can be used for:
 
 ---
 
-# 🚀 Tech Stack
+#  Tech Stack
 
 | Technology                 | Purpose                                  |
 | -------------------------- | ---------------------------------------- |
@@ -28,7 +28,7 @@ This project demonstrates how enterprise blockchain can be used for:
 
 ---
 
-# 🧱 Project Architecture
+#  Project Architecture
 
 ```text
 Frontend UI
@@ -50,7 +50,7 @@ Fabric Blockchain Network
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```text
 EHR-Hyperledger-Fabric-Project/
@@ -66,7 +66,7 @@ EHR-Hyperledger-Fabric-Project/
 
 ---
 
-# ⚙️ Prerequisites
+#  Prerequisites
 
 Before starting, install:
 
@@ -79,11 +79,11 @@ Before starting, install:
 
 ---
 
-# 🔧 Steps to Setup Project
+#  Steps to Setup Project
 
 ---
 
-# 1️⃣ Download Fabric Binaries and Samples
+# 1. Download Fabric Binaries and Samples
 
 ```bash
 ./install-fabric.sh
@@ -97,7 +97,7 @@ This downloads:
 
 ---
 
-# 2️⃣ Start Fabric Test Network
+# 2. Start Fabric Test Network
 
 ```bash
 cd fabric-samples/test-network
@@ -118,7 +118,7 @@ Stop network:
 
 ---
 
-# 3️⃣ Create Channel and Start CA
+# 3. Create Channel and Start CA
 
 ```bash
 cd fabric-samples/test-network
@@ -134,7 +134,7 @@ This will:
 
 ---
 
-# 4️⃣ Deploy Chaincode
+# 4. Deploy Chaincode
 
 ```bash
 ./network.sh deployCC -ccn ehrChainCode -ccp ../asset-transfer-basic/chaincode-javascript/ -ccl javascript
@@ -148,7 +148,7 @@ Chaincode initialization is not required
 
 ---
 
-# 5️⃣ Register Admin Identities
+# 5. Register Admin Identities
 
 ```bash
 cd server-node-sdk/
@@ -159,7 +159,7 @@ node cert-script/registerOrg2Admin.js
 
 ---
 
-# 6️⃣ Onboard Network Participants
+# 6. Onboard Network Participants
 
 ```bash
 node cert-script/onboardHospital01.js
@@ -177,7 +177,7 @@ These scripts:
 
 ---
 
-# 7️⃣ Start Backend Server
+# 7. Start Backend Server
 
 ```bash
 npm install
@@ -192,7 +192,7 @@ http://localhost:5000
 
 ---
 
-# 📡 API List
+#  API List
 
 | API                    | Purpose                    |
 | ---------------------- | -------------------------- |
@@ -206,7 +206,7 @@ http://localhost:5000
 
 ---
 
-# 🔗 Chaincode Logic
+#  Chaincode Logic
 
 ## Actors in Network
 
@@ -221,7 +221,7 @@ http://localhost:5000
 
 ---
 
-# 🔐 Read/Write Permissions
+#  Read/Write Permissions
 
 | Actor               | Permissions                   |
 | ------------------- | ----------------------------- |
@@ -236,7 +236,7 @@ http://localhost:5000
 
 ---
 
-# 🗃️ Ledger Object Structure
+#  Ledger Object Structure
 
 ## Hospital Object
 
@@ -266,11 +266,11 @@ http://localhost:5000
 
 ---
 
-# 📊 Hyperledger Explorer Setup
+#  Hyperledger Explorer Setup
 
 ---
 
-## Step 0: Go to Explorer Folder
+## Step 1: Go to Explorer Folder
 
 ```bash
 cd fabric-explorer/
@@ -278,7 +278,7 @@ cd fabric-explorer/
 
 ---
 
-## Step 1: Copy Organizations Folder
+## Step 2: Copy Organizations Folder
 
 ```bash
 sudo cp -r ../fabric-samples/test-network/organizations/ .
@@ -287,7 +287,7 @@ cp -r ../fabric-samples/test-network/organizations/ .
 
 ---
 
-## Step 2: Export Environment Variables
+## Step 3: Export Environment Variables
 
 ```bash
 export EXPLORER_CONFIG_FILE_PATH=./config.json
@@ -297,7 +297,7 @@ export FABRIC_CRYPTO_PATH=./organizations
 
 ---
 
-## Step 3: Configure test-network.json
+## Step 4: Configure test-network.json
 
 Inside `adminPrivateKey`:
 
@@ -306,7 +306,7 @@ Inside `adminPrivateKey`:
 
 ---
 
-## Step 4: Start Explorer
+## Step 5: Start Explorer
 
 Without logs:
 
@@ -322,7 +322,7 @@ docker-compose up
 
 ---
 
-## Step 5: Stop Explorer
+## Step 6: Stop Explorer
 
 ```bash
 docker-compose down
@@ -330,7 +330,7 @@ docker-compose down
 
 ---
 
-# 📸 Project Features Demonstrated
+#  Project Features Demonstrated
 
 ✅ Multi-Organization Fabric Network
 
@@ -352,7 +352,7 @@ docker-compose down
 
 ---
 
-# 🐳 Docker Containers Used
+#  Docker Containers Used
 
 The project uses multiple containers:
 
@@ -369,7 +369,7 @@ The project uses multiple containers:
 
 ---
 
-# 🧠 Major Problems Faced & Solutions
+#  Major Problems Faced & Solutions
 
 One of the biggest learning experiences in this project was debugging and fixing real enterprise blockchain setup issues.
 
@@ -551,7 +551,7 @@ inside Explorer connection profile.
 
 ---
 
-# 💡 Key Learning Outcomes
+#  Key Learning Outcomes
 
 This project provided practical experience in:
 
@@ -568,7 +568,7 @@ This project provided practical experience in:
 
 ---
 
-# 📈 Future Improvements
+#  Future Improvements
 
 Planned enhancements:
 
@@ -585,7 +585,7 @@ Planned enhancements:
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 Murari Guna
 
@@ -595,6 +595,36 @@ GitHub Repository:
 
 ---
 
-# 📜 License
+#  References & Credits
 
-This project uses components from Hyperledger Fabric and follows Apache 2.0 licensing where applicable.
+## Hyperledger Fabric Official Repository
+
+- Hyperledger Fabric GitHub Repository:  
+  https://github.com/hyperledger/fabric
+
+- Hyperledger Fabric Samples Repository:  
+  https://github.com/hyperledger/fabric-samples
+
+- Hyperledger Explorer Repository:  
+  https://github.com/hyperledger-labs/blockchain-explorer
+
+- Hyperledger Fabric Documentation:  
+  https://hyperledger-fabric.readthedocs.io/
+  
+- Additional Architecture & Implementation Reference:  
+  https://github.com/akshaykurhekar/EHR-Hyperledger-Fabric-Project.git
+---
+
+# 📜 License & Attribution
+
+This project uses components and tools from the Hyperledger Fabric ecosystem.
+
+Hyperledger Fabric is licensed under the Apache License 2.0.
+
+- Apache License 2.0:  
+  https://www.apache.org/licenses/LICENSE-2.0
+
+- Hyperledger Project Website:  
+  https://www.hyperledger.org/
+
+---
